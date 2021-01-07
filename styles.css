@@ -1,0 +1,119 @@
+/*HTML tags*/
+
+body{
+  margin: 0px;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/*icons*/
+
+.fa-heart{
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  animation: fall linear forwards;
+  color: white;
+  z-index: 1;
+}
+
+/*Section feliz-aniv*/
+
+#feliz-aniv{
+  text-align: center;
+  font-family: "Belleza";
+}
+
+.presentacion {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/foto1.jpg);
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.texto {
+  text-align: center;
+  padding-right: 25%;
+  padding-left: 25%;
+  color: white;
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+  z-index: 2;
+}
+
+.big-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+
+.big-desc{
+  font-size: 2.1rem;
+}
+
+/*Section datos*/
+#datos{
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.container-datos{
+  height: 100vh;
+  width: 100vw;
+  padding-top: 12.5vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 12.5vh;
+}
+
+.heading-datos{
+  font-size: 2.5rem;
+
+}
+
+.icono-dato{
+  font-size: 5rem;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.row-datos{
+  margin-top: 6.5%;
+  margin-bottom: 6.5%;
+}
+.dato {
+  font-size: 1.5rem;
+  margin: 1% 0 2% 0;
+}
+
+/*--Media or keyframes queries */
+
+@media (max-width: 400px){
+  .big-heading{
+    font-size: 3rem;
+  }
+
+  .big-desc{
+    font-size: 1.5rem;
+  }
+
+  .heading-datos{
+    1rem;
+  }
+}
+
+@keyframes fall{
+  to{
+    transform: translateY(105vh);
+  }
+}
