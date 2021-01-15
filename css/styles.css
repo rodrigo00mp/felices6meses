@@ -1,0 +1,191 @@
+/*HTML tags*/
+
+body{
+  margin: 0px;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/*icons*/
+
+.fa-heart{
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  animation: fall linear forwards;
+  color: white;
+  z-index: 3;
+}
+
+
+/*Section feliz-aniv*/
+
+#feliz-aniv{
+  text-align: center;
+  font-family: "Belleza";
+}
+
+.presentacion {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/foto1.jpg);
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.texto {
+  text-align: center;
+  padding-right: 20%;
+  padding-left: 20%;
+  color: white;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+  z-index: 2;
+}
+
+.big-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  padding-bottom: 3rem;
+}
+
+.big-desc{
+  font-size: 1.9rem;
+}
+
+/*Section datos*/
+#datos{
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.container-datos{
+  width: 100vw;
+  padding-top: 80px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.heading-datos{
+  font-size: 2.5rem;
+
+}
+
+.icono-dato{
+  font-size: 400%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 1rem 0 2.2rem 0;
+}
+
+.row-datos{
+  margin-top: 6.5%;
+  margin-bottom: 6.5%;
+}
+.dato {
+  font-size: 1.5rem;
+  margin: 1% 0 2% 0;
+}
+
+/*Section momentos*/
+
+.container-momentos{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.row-momentos {
+  /*
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+  */
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.row-momentos-reverse {
+
+  flex-direction: row-reverse;
+
+}
+
+
+.from-left{
+  transform: translateX(-70%);
+}
+.from-right{
+  transform: translateX(70%);
+}
+
+.from-left,
+.from-right{
+  transition: opacity 1000ms ease-in,
+  transform 400ms ease-in;
+  opacity: 0;
+}
+.from-left.appear,
+.from-right.appear{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.row-momentos > img {
+  margin: 2rem;
+}
+.row-momentos > p {
+  margin: 2rem;
+  font-size: 0.9rem;
+  width: 20rem;
+  text-align: justify;
+
+}
+
+.heading-momentos  {
+  margin: 5rem auto 5rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/*--Media or keyframes queries */
+
+@media (max-width: 400px){
+  .big-heading{
+    font-size: 2.2rem;
+  }
+
+  .big-desc{
+    font-size: 1.3rem;
+  }
+
+  .heading-datos{
+    /*font-size: 1rem;*/
+  }
+}
+
+@keyframes fall{
+  to{
+    transform: translateY(105vh);
+  }
+}
