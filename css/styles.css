@@ -351,6 +351,14 @@ body {
   .heading-timeline h2 {
     font-size: 1.5rem;
   }
+  
+  .final-texto p{
+    font-size: 0.85rem;
+  }
+
+  .final-texto {
+    padding: 0 2rem 0 2rem;
+  }
 }
 
 @keyframes fall {
